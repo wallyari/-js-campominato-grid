@@ -17,15 +17,13 @@ btnPlay.addEventListener('click',function(){
    
    
    
-   
-   
  //creo un ciclo for 
     for(let i=1 ; i <= 100 ; i++){
 
         //creo elemento
         let newBox =document.createElement('div');
 
-        //gli assegno la classe
+        // assegno la classe
         newBox.classList.add('box');
 
         // dichiaro l'elemento creato
@@ -40,16 +38,19 @@ btnPlay.addEventListener('click',function(){
         console.log (box[i]);
 
         newBox.addEventListener('click',function(){
-            addToToggleClass (newBox, 'box_active');
-        //stampo in console il numero dell'elemento selezionato
+            
+            //add class box_active per il cambio colore.
+            addToggleClass (newBox, 'box_active');
+        
+            //stampo in console il numero dell'elemento selezionato
             console.log(`click su elemento ${i}`);
         })
     }
 })
 
 
-//funzione toggle per aggiungere o rimuovere una classe
-function addToToggleClass(elemnt , className){
-    elemnt.classList.toggle(className);
+//funzione "toggle" per aggiungere o rimuovere una classe
+function addToggleClass(element , className){
+    element.classList.toggle(className);
 }
 
