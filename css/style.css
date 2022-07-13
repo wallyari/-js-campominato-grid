@@ -1,0 +1,32 @@
+
+.grid_container{
+	background-color: rgb(29, 29, 194);
+	margin: 0 auto;
+	width: 650px;
+	height: 650px;
+}
+.box{
+	display: flex;
+	border: 1px solid white;
+	cursor: crosshair;
+	color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* 3 livelli di box */
+.box_easy{
+	width: calc(100% / 10);
+	height: calc(100% / 10);
+}
+.box_medium{
+	width: calc(100% / 9);
+	height: calc(100% / 9);
+}
+
+.box_hard{
+	width: calc(100% / 7);
+	height: calc(100% / 7);
+} 
